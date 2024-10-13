@@ -1,0 +1,40 @@
+.custom-table {
+    display: flex;
+    flex-direction: column;
+
+    & .table-header {
+        display: grid;
+
+        & .table-cell {
+            background-color: rgb(164, 231, 209);
+            border-top: 1px solid black;
+            font-weight: 600;
+        }
+    }
+
+    & .table-row {
+        display: grid;
+
+        &:nth-child(2n+1) {
+            background-color: rgb(233, 233, 233);
+        }
+
+        &.active {
+            background-color: rgb(197, 238, 238);
+        }
+    }
+
+    & .table-cell {
+        border: 1px solid black;
+        border-top: transparent;
+        border-left: transparent;
+        min-width: 22px;
+        outline: none;
+        background-color: transparent;
+        padding: 8px;
+
+        &:first-child {
+            border-left: 1px solid black;
+        }
+    }
+}

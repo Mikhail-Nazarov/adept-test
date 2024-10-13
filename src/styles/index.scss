@@ -1,0 +1,21 @@
+.app {
+    max-width: 700px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: fit-content;
+
+    button {
+        width: fit-content;
+    }
+}
